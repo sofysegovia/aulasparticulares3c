@@ -3,149 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EstudaYa - Conectando alunos e professores</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>StudaYa - Aulas Particulares</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header>
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.svg" alt="EstudaYa">
-                <h1>EstudaYa</h1>
-            </a>
-            
-            <nav class="navegacao">
-                <ul>
-                    <li><a href="#como-funciona">Como Funciona</a></li>
-                    <li><a href="#disciplinas">Disciplinas</a></li>
-                    <li><a href="#professores">Professores</a></li>
-                    <li><a href="#planos">Planos</a></li>
-                </ul>
-            </nav>
-            
-            <div class="acoes">
-                <a href="auth/login.html" class="botao botao-secundario">Entrar</a>
-                <a href="auth/cadastro.html" class="botao botao-primario">Cadastre-se</a>
+            <div class="logo">
+                <span class="studya">Studa</span><span class="yaya">Ya</span>
             </div>
+            <nav>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#professores">Professores</a>
+                <a href="#disciplinas">Disciplinas</a>
+                <a href="#" class="btn btn-login">Entrar</a>
+            </nav>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <div class="hero-conteudo">
-                    <h2>Aprenda com os melhores professores particulares</h2>
-                    <p>Agende aulas online ou presenciais no seu próprio ritmo</p>
-                    <div class="cta">
-                        <a href="auth/cadastro.html" class="botao botao-primario botao-grande">Comece agora</a>
-                        <a href="#como-funciona" class="botao botao-secundario botao-grande">Saiba mais</a>
+                <div class="hero-content">
+                    <h1>Encontre o professor perfeito</h1>
+                    <p>Agende aulas particulares online ou presenciais de forma simples</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Quero aprender</a>
+                        <a href="#" class="btn btn-secondary">Sou professor</a>
                     </div>
                 </div>
-                <div class="hero-imagem">
-                    <img src="assets/hero-image.svg" alt="Estudante aprendendo online">
-                </div>
-            </div>
-        </section>
-
-        <section id="como-funciona" class="como-funciona">
-            <div class="container">
-                <h2>Como funciona o EstudaYa?</h2>
-                <div class="passos">
-                    <div class="passo">
-                        <div class="passo-numero">1</div>
-                        <h3>Crie sua conta</h3>
-                        <p>Registre-se como aluno ou professor em poucos minutos</p>
-                    </div>
-                    <div class="passo">
-                        <div class="passo-numero">2</div>
-                        <h3>Encontre seu match</h3>
-                        <p>Busque professores ou alunos com base em suas necessidades</p>
-                    </div>
-                    <div class="passo">
-                        <div class="passo-numero">3</div>
-                        <h3>Agende suas aulas</h3>
-                        <p>Escolha o horário que melhor se adapta à sua rotina</p>
-                    </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Estudante aprendendo">
                 </div>
             </div>
         </section>
 
-        <section id="disciplinas" class="disciplinas">
+        <section id="como-funciona" class="how-it-works">
             <div class="container">
-                <h2>Disciplinas Disponíveis</h2>
-                <div class="categorias">
-                    <div class="categoria">
-                        <i class="fas fa-square-root-alt"></i>
-                        <h3>Matemática</h3>
-                        <ul>
-                            <li>Álgebra</li>
-                            <li>Geometria</li>
-                            <li>Cálculo</li>
-                            <li>Estatística</li>
-                        </ul>
+                <h2>Como funciona</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">1</div>
+                        <h3>Encontre</h3>
+                        <p>Busque professores por disciplina ou localização</p>
                     </div>
-                    <div class="categoria">
-                        <i class="fas fa-flask"></i>
-                        <h3>Ciências</h3>
-                        <ul>
-                            <li>Física</li>
-                            <li>Química</li>
-                            <li>Biologia</li>
-                        </ul>
+                    <div class="step">
+                        <div class="step-icon">2</div>
+                        <h3>Agende</h3>
+                        <p>Escolha o melhor horário na agenda</p>
                     </div>
-                    <div class="categoria">
-                        <i class="fas fa-language"></i>
-                        <h3>Idiomas</h3>
-                        <ul>
-                            <li>Inglês</li>
-                            <li>Espanhol</li>
-                            <li>Francês</li>
-                        </ul>
+                    <div class="step">
+                        <div class="step-icon">3</div>
+                        <h3>Aprenda</h3>
+                        <p>Tenha aulas personalizadas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="professores" class="teachers">
+            <div class="container">
+                <h2>Nossos professores</h2>
+                <div class="teacher-grid">
+                    <div class="teacher-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzp9P2GxAEMbhmV5yZJufVbtjG4UBC4UHy_Q&s" alt="Professora">
+                        <h3>Prof. Ana Silva</h3>
+                        <p>Matemática</p>
+                        <div class="rating">★★★★☆ 4.7</div>
+                        <a href="#" class="btn btn-teacher">Ver perfil</a>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor">
+                        <h3>Prof. Carlos Rocha</h3>
+                        <p>Física</p>
+                        <div class="rating">★★★★★ 5.0</div>
+                        <a href="#" class="btn btn-teacher">Ver perfil</a>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="data:image/jpeg;base64,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" alt="Professora">
+                        <h3>Prof. Juliana Mendes</h3>
+                        <p>Inglês</p>
+                        <div class="rating">★★★★☆ 4.2</div>
+                        <a href="#" class="btn btn-teacher">Ver perfil</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer>
         <div class="container">
-            <div class="rodape-conteudo">
-                <div class="rodape-info">
-                    <img src="assets/logo-branco.svg" alt="EstudaYa" class="logo-rodape">
-                    <p>Conectando alunos e professores para um aprendizado eficiente e personalizado.</p>
-                </div>
-                <div class="rodape-links">
-                    <div class="coluna">
-                        <h3>Para Alunos</h3>
-                        <ul>
-                            <li><a href="#">Buscar Professores</a></li>
-                            <li><a href="#">Agendar Aulas</a></li>
-                            <li><a href="#">Minhas Aulas</a></li>
-                        </ul>
-                    </div>
-                    <div class="coluna">
-                        <h3>Para Professores</h3>
-                        <ul>
-                            <li><a href="#">Cadastrar Disciplinas</a></li>
-                            <li><a href="#">Definir Horários</a></li>
-                            <li><a href="#">Gerenciar Aulas</a></li>
-                        </ul>
-                    </div>
-                    <div class="coluna">
-                        <h3>Institucional</h3>
-                        <ul>
-                            <li><a href="#">Sobre Nós</a></li>
-                            <li><a href="#">Termos de Uso</a></li>
-                            <li><a href="#">Política de Privacidade</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="rodape-base">
-                <p>&copy; 2023 EstudaYa. Todos os direitos reservados.</p>
-                <div class="redes-sociais">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a> 
-                </div>
-           
+            <p>© 2023 StudaYa - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
